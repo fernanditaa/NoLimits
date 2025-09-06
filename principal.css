@@ -31,6 +31,8 @@
 .navbar .btn:hover::after{
     width: 100%;
 }
+
+
 /*----------------------------------- */
 
 /* Opcion de buscar */
@@ -97,6 +99,8 @@
 .search-box:focus-within .icon{
     color: #00f7ff;
 }
+
+/*diseño del carrito*/
 .btn-comprar {
     background-color: white;
     color: black;
@@ -141,16 +145,34 @@
     padding: 2px 6px;
     font-size: 12px;
 }
+/*con este css lo que se agrega en el carrito se muestra en un costado*/
 .fondo-carrito {
-    background-color: silver;
-    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-
+    top: 20%;
+    right: -1%;
+    transform: translate(-30%, -10%);
+    
+    width: 300%;
+    max-width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+    z-index: 1001;
+    padding: auto;
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.35)),
+    url("../img/slide3.png") no-repeat center center/cover;
+    display: none;
+}
+.dontenedor-principal{
+    position: relative;
+    margin-top: 110px;
+}
+.modelo.carrito{
+    position: relative;
 }
 /*#todo esto va dentro del carrito de compras*/
 .modelo {
@@ -168,8 +190,9 @@
     z-index: 1000;
 }
 .modelo-contenido {
-    max-height: 400px;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .modelo-contenido h2 {
     margin-top: 0;
@@ -284,4 +307,54 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 2rem; /* espacio entre categorías */
+}
+footer{
+    background-color: aquamarine;
+    padding: auto;
+    max-width: auto;
+    display: block;
+}
+
+/*---------------------------------------------------*/
+/* footer, tambien se puede modificar*/
+.footer-nolimits {
+background: linear-gradient(90deg, #020024, #3a0ca3, #7209b7);
+color: #e9efff;
+text-align: center;
+border-top: 2px solid rgba(255, 77, 236, 0.5);
+box-shadow: 0 -4px 14px rgba(123, 92, 255, 0.4);
+padding-top: 20px;
+}
+
+.footer-logo {
+font-size: clamp(1.4rem, 4vw, 2rem);
+font-weight: 700;
+background: linear-gradient(90deg, #ff4dec, #00e7ff, #7b5cff);
+-webkit-background-clip: text;
+color: transparent;
+text-shadow: 0 0 10px rgba(255, 77, 236, 0.3);
+margin-bottom: 0.4rem;
+}
+
+.footer-tagline {
+font-size: 1rem;
+color: #d6d6ff;
+margin-bottom: 1rem;
+}
+
+.footer-link {
+color: #e9efff;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+color: #ff4dec;
+text-decoration: underline;
+}
+
+.footer-copy {
+font-size: 0.85rem;
+color: #ccccff;
+margin-top: 1rem;
 }
