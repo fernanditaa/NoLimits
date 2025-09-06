@@ -63,6 +63,7 @@ function actualizarCarrito() {
         </li>`;
     });
     document.getElementById('total').textContent = total.toLocaleString();
+    localStorage.setItem('totalCompra', total);
 }
 
 function eliminarDelCarrito(index) {
@@ -82,12 +83,12 @@ function finalizarCompra() {
     if (carrito.length === 0) {
         alert("Tu carrito está vacío 🛒");
     } else {
-        alert("Compra realizada con éxito ✅");
-        carrito = [];
-        actualizarCarrito();
-        cerrarCarrito();
+        const total = carrito.reduce((acc, item) => acc + item.precio, 0);
+        localStorage.setItem('totalCompra', total); // Guardar total en localStorage cambio del dia 06-09-2025
+        window.location.href = 'metodoPago.html';// para redirigir a la página de método de pago
     }
 }
+
 
 // Inicializa mostrando películas
 mostrarCategoria('peliculas');
