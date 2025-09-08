@@ -33,13 +33,8 @@
                             <li><a class="dropdown-item" href="#videojuegos">Videojuegos</a></li>
                             <li><a class="dropdown-item" href="#accesorios">Accesorios</a></li>
                         </ul>
-                        
-                </ul>
 
-                <!--Estoo es la opcion de zona secreta o +21-->
-                    <button class="zona-secreta-btn" onclick="location.href='../html/zonaSecreta.html'"> +18 </button>
-                
-                
+                </ul>
                 <form class="search-box" role="search">
                     <input type="text" placeholder="Buscar..."/>
                     <span class="icon">🔍</span>
@@ -50,7 +45,7 @@
         </div>
     </nav>
     <div class="prin-sub"><br><br>
-        <h2>Productos Destacados</h2>
+        <h2>_.- Variedad, estilo y calidad en un solo lugar -._</h2>
     </div>
     <div class="productos-container d-flex flex-column align-item-center">
     <!-- Los productos que estan en la pagina principal, pelicula/videojuegos/accesorios-->
@@ -58,16 +53,16 @@
     <div id="peliculas" class="producto card p-2 m-2 peliculas" style="width:50rem;">
         <img src="https://via.placeholder.com/150" class="card-img-top" alt="">
         <div class="card-body">
-            <h5 class="card-title">Spiderman</h5>
-            <img src="../assets/img/spider1.jpg" alt=""><br>
+            <h5 class="card-title">Películas</h5>
+            <img src="../assets/img/PSpiderman1.png" alt=""><br>
             
             <!-- Botón collapse para que baje la información adicional -->
             <button class="btn btn-info mb-3" data-bs-toggle="collapse" data-bs-target="#info-pelicula1">
                 Descripción película
                 
             </button>
-            <p class="card-text">$2.000</p>
-            <button class="btn btn-success" onclick="agregarAlCarrito('Película ', 2000)">
+            <p class="card-text">$11.990</p>
+            <button class="btn btn-success" onclick="agregarAlCarrito('Película ', 11990)">
                 Agregar
             </button>
             <div id="mensaje-carrito" class="alert alert-success position-fixed top-0 start-50 translate-middle-x mt-3 d-none"
@@ -76,89 +71,25 @@
             </div>
             <div class="collapse" id="info-pelicula1">
                 <div class="card card-body">
-                    <img src="../assets/img/pider2.jpg" alt="" >
-                    La primera película de Spider-Man sigue al tímido adolescente Peter Parker,
-                    quien obtiene poderes arácnidos tras ser mordido por una araña genéticamente modificada.
-                    Tras la muerte de su Tío Ben, quien le enseña una importante lección,
-                    Peter decide usar sus habilidades para combatir el crimen como el Hombre Araña,
-                    enfrentándose al Duende Verde (Norman Osborn) mientras lucha con su vida cotidiana y su amor por Mary Jane.
+                    "Peter Parker, un estudiante tímido y brillante, ve su vida transformada tras ser mordido por una araña modificada. 
+                    De repente adquiere fuerza, agilidad y sentidos sobrehumanos, pero la tragedia lo golpea cuando su tío Ben muere a manos de un criminal 
+                    al que pudo detener. Con la lección &quot;Un gran poder conlleva una gran responsabilidad&quot;, Peter decide proteger Nueva York como Spider-Man. 
+                    Mientras intenta equilibrar la universidad, el trabajo y su amor por Mary Jane, debe enfrentar a Norman Osborn, el Duende Verde, un enemigo tan 
+                    carismático como aterrador que lo obliga a definir quién es y qué está dispuesto a sacrificar.">
                 </div>
             </div>
-            <!-- aca agrego una categoria interna solo para pelicula para que solo dentro de ella se puedan ver las demas categorias-->
-            <!-- puedes dejarla asi o sacarla ya que las demas tienen la misma informacion o sacar las otras secciones -->
-            <!-- hay que arreglar el scrip de esta seccion con las secciones individuales ya que al tocar "mas informacion se abren las dos secciones"-->
     
-            <!-- agrego Videojuego dentro de la seccion pelicula-->
-    <div class="producto card p-2 m-2 videojuegos" style="width: 45rem;">
-        <img src="https://via.placeholder.com/150" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Videojuego</h5>
-            <p class="card-text">$15.000</p>
-            <!-- Botón collapse para información adicional -->
-            <button class="btn btn-info mb-3" data-bs-toggle="collapse" data-bs-target="#info-videoJuego">
-                Más información
-                
-            </button>
-            <div class="collapse" id="info-videoJuego">
-                <div class="card card-body">
-                    <img src="../assets/img/SpiderJuego.webp" alt="" style="width: 30rem;">
-                    Spider-Man (también conocido como Spider-Man: The Movie Game),
-                    es un videojuego de acción basado en Spider-Man, personaje de Marvel Comics
-                    y está directamente basado en el primer largometraje estelarizado por el epónimo personaje.
-                    Fue desarrollado por Treyarch y realizado en 2002 para PC y varias consolas de videojuegos.
-                    Gran videojuego aqui muahahaha
-                </div>
-            </div>
-            <!-- Botón de agregar al carrito -->
-            <button class="btn btn-success" onclick="agregarAlCarrito('Videojuego', 15000)">
-                Agregar
-            </button>
-            
         </div>
+
     </div>
-
-    <!-- tambien se agrega Accesorios dentro de la seccion pelicula-->
-            <div class="producto card p-2 m-2 accesorios" style="width: 45rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Accesorios</h5>
-                    
-                    <p class="card-text">$8.000</p>
-                    <!-- Botón collapse para información adicional -->
-                    <button class="btn btn-info mb-3" data-bs-toggle="collapse" data-bs-target="#info-accesorio">
-                        Más información
-                        
-                    </button>
-                    <div class="collapse" id="info-accesorio">
-                        <div class="card card-body">
-                            <img src="../assets/img/spiderAc1.jpg" alt="" style="width: 30rem;">
-                            Set de baño infantil Spiderman / Jay Franco
-                            Incluye un dispensador de jabón y un vaso con diseño de Spiderman.
-                            Hecho de plástico resistente, ideal para niños. Es fácil de usar,
-                            recargable y perfecto para el baño o como organizador.
-                            Gran opción como regalo para fanáticos de Marvel.
-                        </div>
-                    </div>
-                    <!-- Botón de agregar al carrito -->
-                    <button class="btn btn-success" onclick="agregarAlCarrito('Accesorio', 8000)">
-                        Agregar
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- ACA YA COMIENZAN LAS SECCIONES INDIVIDUALES-->
-
 
     <!-- VideoJuego con su acceso indivudual-->
     <div id="videojuegos" class="producto card p-2 m-2 videojuegos" style="width: 50rem;">
         <img src="https://via.placeholder.com/150" class="card-img-top" alt="">
         <div class="card-body">
             <h5 class="card-title">Videojuego</h5>
-            <img src="../assets/img/SpiderJuego.webp" alt="" style="width: 30rem;">
-            <p class="card-text">$15.000</p>
+            <img src="../assets/img/VGSpiderman1.png" alt="" style="width: 30rem;">
+            <p class="card-text">$69.990</p>
             <!-- Botón collapse para información adicional -->
             <button class="btn btn-info mb-3" data-bs-toggle="collapse" data-bs-target="#info-videoJuego">
                 Más información
@@ -166,14 +97,14 @@
             </button>
             <div class="collapse" id="info-videoJuego">
                 <div class="card card-body">
-                    Spider-Man (también conocido como Spider-Man: The Movie Game),
-                    es un videojuego de acción basado en Spider-Man, personaje de Marvel Comics
-                    y está directamente basado en el primer largometraje estelarizado por el epónimo personaje.
-                    Fue desarrollado por Treyarch y realizado en 2002 para PC y varias consolas de videojuegos.
+                    "Peter Parker, con ocho años como Spider-Man, enfrenta a los Demonios Internos liderados por Mister Negative mientras intenta equilibrar su 
+                    vida personal y heroica. La ciudad cae en una conspiración que reúne a villanos clásicos y secretos peligrosos que amenazan a millones. Explora un sistema 
+                    de combate dinámico con combos fluidos, gadgets innovadores y acrobacias espectaculares. Disfruta de una ciudad de Nueva York más detallada y realista, 
+                    con misiones secundarias y eventos que enriquecen la experiencia."
                 </div>
             </div>
             <!-- Botón de agregar al carrito -->
-            <button class="btn btn-success" onclick="agregarAlCarrito('Videojuego', 15000)">
+            <button class="btn btn-success" onclick="agregarAlCarrito('Videojuego', 69990)">
                 Agregar
             </button>
         </div>
@@ -183,8 +114,8 @@
     <div id="accesorios" class="producto card p-2 m-2 accesorios" style="width: 50rem;">
         <div class="card-body">
             <h5 class="card-title">Accesorios</h5>
-            <img src="../assets/img/spiderAc1.jpg" alt="" style="width: 30rem;">
-            <p class="card-text">$8.000</p>
+            <img src="../assets/img/ACCSpiderman2.png" alt="" style="width: 30rem;">
+            <p class="card-text">$139.990</p>
             <!-- Botón collapse para información adicional -->
             <button class="btn btn-info mb-3" data-bs-toggle="collapse" data-bs-target="#info-accesorio">
                 Más información
@@ -192,15 +123,15 @@
             </button>
             <div class="collapse" id="info-accesorio">
                 <div class="card card-body">
-                    Set de baño infantil Spiderman / Jay Franco
-                    Incluye un dispensador de jabón y un vaso con diseño de Spiderman.
-                    Hecho de plástico resistente, ideal para niños. Es fácil de usar,
-                    recargable y perfecto para el baño o como organizador.
-                    Gran opción como regalo para fanáticos de Marvel.
+                    "Lleva tu experiencia de juego al siguiente nivel con el DualSense de PlayStation 5 inspirado en Spider-Man. Su diseño combina el negro mate 
+                    con detalles en rojo y un intrincado patrón de simbionte que envuelve la empuñadura, acompañado del icónico logo de la araña en blanco en el 
+                    panel táctil. Incluye una base de carga con iluminación LED en tonos azul y naranja, que no solo mantiene tu control siempre listo, sino que 
+                    también añade un toque futurista a tu setup gamer. Fabricado con materiales de alta calidad, este DualSense ofrece comodidad, precisión y la 
+                    tecnología háptica característica de PS5, todo con un estilo único digno de los verdaderos fanáticos de Marvel."
                 </div>
             </div>
             <!-- Botón de agregar al carrito -->
-            <button class="btn btn-success" onclick="agregarAlCarrito('Accesorio', 8000)">
+            <button class="btn btn-success" onclick="agregarAlCarrito('Accesorio', 139990)">
                 Agregar
             </button>
         </div>
@@ -234,16 +165,9 @@
     <!-- footer solo para esta página -->
     <!-- le pueden modificar los datos -->
     <div style="height: 20px;"></div>
-        <div class="footer-links d-flex justify-content-center gap-4 flex-wrap my-3">
-            <a href="#" class="footer-link">Inicio</a>
-            <a href="#peliculas" class="footer-link">Películas</a>
-            <a href="#videojuegos" class="footer-link">Videojuegos</a>
-            <a href="#accesorios" class="footer-link">Accesorios</a>
-            <a href="mailto:NoLimits@mlspa.cl" class="footer-link">Contacto</a>
-        </div>
-
-    <small class="footer-copy">© 2025 NoLimits SPA. Todos los derechos reservados.</small>
-
+            <footer class="footer">
+                <p>&copy; 2025 NoLimits | nolimits@nlspa.cl </p>
+        </footer>
     <script src="../assets/js/principal.js"> </script>
     <!-- si quiero que funcione bien el css tengo que colocarlo aca abajo -->
     <link rel="stylesheet" href="../assets/css/principal.css">
